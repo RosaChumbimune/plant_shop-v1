@@ -132,7 +132,6 @@
   border-radius: 1rem;
 }
 .suscribe {
-  
   align-items: center;
   text-align: center;
   margin: 1rem;
@@ -144,19 +143,19 @@
   height: auto;
 }
 .form__newsletter {
-text-align: center;
+  text-align: center;
 }
 .newsletter__description {
   text-align: center;
 }
 .email-title {
- font-weight: 500;
+  font-weight: 500;
 }
 .input-subscribe {
   background-color: rgb(104, 136, 125);
 }
 .button-subscribe {
-   background: cornsilk;
+  background: cornsilk;
 }
 .footer {
   justify-content: center;
