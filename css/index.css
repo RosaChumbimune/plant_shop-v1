@@ -1,174 +1,191 @@
-.body {
-  background-color: rgb(157, 211, 164);
-  font-family: "Hahmlet", serif;
-  margin: 0;
-}
-.header__nav-container {
-  background-color: rgba(186, 204, 198, 0.384);
-  box-shadow: 0 0.25rem 0.25rem 0 rgba(51, 48, 48, 0.651);
-  width: 100%;
-  top: 0;
-  justify-content: center;
-  padding: 0.5rem;
-  margin: 0;
-}
-.header-nav__bar-content {
-  background-color: transparent;
-  display: flex;
-
-  justify-content: space-between;
-  flex-direction: row;
-  padding: 0.5rem;
-}
-.nav-bar__list {
-  display: flex;
-  background-color: transparent;
-  gap: 2rem;
-}
-.nav-bar__links {
-  list-style: none;
-}
-
-.links__link {
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: rgb(43, 42, 42);
-  transition: all 0.25s;
-}
-.links__link:hover {
-  color: rgb(52, 129, 87);
-  border-bottom: 0.25rem solid rgb(52, 129, 87);
-}
-.main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 60.5rem;
-}
-
-.main__description-content {
-  background-color: rgba(160, 221, 160, 0.452);
-  background-image: url(https://www.tusplantasdecasa.com/wp-content/uploads/2021/01/haworthia-houseplant-haworthia-fasciata-plant-close-up-macro-drop-of-water.jpg);
-  background-repeat: no-repeat;
-  max-width: 60.5rem;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  padding: auto;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.main__title {
-  font-family: "Lora", serif;
-  text-align: center;
-  font-size: 5rem;
-  font-weight: 2rem;
-  color: rgb(206, 202, 223);
-  margin: 0;
-}
-
-.main__principal {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: antiquewhite;
-}
-.main__description {
-  text-align: center;
-  font-weight: 500;
-  color: beige;
-}
-.button,
-.button__history {
-  background-color: rgb(215, 215, 243);
-  text-decoration: none;
-  font-weight: 700;
-}
-.cards__container {
-  display: flex;
-}
-.cards__list {
-  padding: 2rem;
-  margin: auto;
-}
-.card {
-  background-color: rgba(34, 211, 48, 0.411);
-  margin: 1rem;
-  border-radius: 1rem;
-  text-align: center;
-  transition: all 0.25s;
-  font-weight: 800;
-}
-.card:hover {
-  filter: brightness(250%);
-}
-.product__catalog {
-  flex-direction: column;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-.catalog__title {
-  font-size: 2rem;
-  padding: 1rem;
-}
-.catalog__product-image-container {
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-.catalog__product-image {
-  display: flex;
-  margin: auto;
-  flex-wrap: wrap;
-  padding: 1rem;
-  background-color: rgba(90, 90, 212, 0.5);
-  border-radius: 1rem;
-}
-.suscribe {
+:root{
+  scroll-behavior: smooth;
   
-  align-items: center;
-  text-align: center;
-  margin: 1rem;
-  padding: auto;
-}
-.suscribe__title-form {
-  align-items: center;
-  text-align: center;
-  height: auto;
-}
-.form__newsletter {
-text-align: center;
-}
-.newsletter__description {
-  text-align: center;
-}
-.email-title {
- font-weight: 500;
-}
-.input-subscribe {
-  background-color: rgb(104, 136, 125);
-}
-.button-subscribe {
-   background: cornsilk;
-}
-.footer {
-  justify-content: center;
-}
-.footer__container-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
-}
-.link__image {
-  align-items: center;
-}
-.rights {
-  text-align: center;
-}
+  }
+  .body {
+    background-color: rgb(157, 211, 164);
+    font-family: "Hahmlet", serif;
+    text-align: center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    min-height: 200vh;
+  }
+  .header{
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%; 
+  }
+  .header__nav-container {
+    background-color: rgba(168, 223, 204, 0.527);
+    box-shadow: 0 0.25rem 0.25rem 0 rgba(51, 48, 48, 0.651);
+    justify-content: space-between;
+    /* padding: 0.5rem; */
+    
+  }
+  .header-nav__bar-content {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0.5rem;
+    /* margin: auto; */
+  }
+  .nav-bar__list {
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-bar__links {
+    list-style: none;
+    flex-wrap: nowrap;
+  }
+  
+  .links__link {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(43, 42, 42);
+    transition: all 0.25s;
+  }
+  .links__link:hover {
+    color: rgb(52, 129, 87);
+    border-bottom: 0.25rem solid rgb(52, 129, 87);
+  }
+  .main {
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    max-width: 100vh;
+    height: 100%;
+    margin: auto;
+  }
+  
+  .main__description-content {
+    background-color: rgba(160, 221, 160, 0.452);
+    background-image: url(https://www.tusplantasdecasa.com/wp-content/uploads/2021/01/haworthia-houseplant-haworthia-fasciata-plant-close-up-macro-drop-of-water.jpg);
+    background-repeat: no-repeat;
+    max-width: 60.5rem;
+  
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .main__title {
+    font-family: "Lora", serif;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 2rem;
+    color: rgb(206, 202, 223);
+  }
+  
+  .main__principal {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: antiquewhite;
+  }
+  .main__description {
+    text-align: center;
+    font-weight: 500;
+    color: beige;
+  }
+  .button,
+  .button__history {
+    background-color: rgb(215, 215, 243);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .cards__container {
+    display: flex;
+  }
+  .cards__list {
+    padding: 2rem;
+    margin: auto;
+  }
+  .card {
+    background-color: rgba(34, 211, 48, 0.411);
+    margin: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.25s;
+    font-weight: 800;
+  }
+  .card:hover {
+    filter: brightness(250%);
+  }
+  .product__catalog {
+    flex-direction: column;
+  
+  }
+  .catalog__title {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .product-catalog__container{
+      display: grid;
+    grid-template-columns: 1fr ;
+    gap: 1rem;
+  }
+  .catalog__product-image-container {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .catalog__product-image {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 1rem;
+    background-color: rgba(90, 90, 212, 0.5);
+    border-radius: 1rem;
+  }
+  .suscribe {
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+    padding: auto;
+    gap: 1rem;
+  }
+  .suscribe__title-form {
+    align-items: center;
+    text-align: center;
+    height: auto;
+  }
+  .form__newsletter {
+    text-align: center;
+  }
+  .newsletter__description {
+    text-align: center;
+  }
+  .email-title {
+    font-weight: 500;
+  }
+  .input-subscribe {
+    background-color: rgb(104, 136, 125);
+  }
+  .button-subscribe {
+    background: cornsilk;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer__container-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .link__image {
+    align-items: center;
+  }
+  .rights {
+    text-align: center;
+  }
+  
